@@ -1,0 +1,108 @@
+﻿<Window x:Class="VehicleDetails.Trucks"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VehicleDetails"
+        mc:Ignorable="d"
+        Title="Trucks" Height="750" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+
+
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+
+        </Grid.ColumnDefinitions>
+        <Border x:Name="bor" BorderBrush="Aqua" Margin="-40,0,-30,0" Grid.RowSpan="11" Grid.ColumnSpan="4">
+            <Image Source="https://plus.unsplash.com/premium_photo-1664695368915-096285d5a08d?q=80"></Image>
+        </Border>
+        <TextBlock Text="Truck Details"  FontWeight="UltraBold" FontSize="20" Grid.ColumnSpan="2" Grid.Column="1" Margin="50,4,45,10" />
+
+
+
+
+        <TextBlock Text="Make:" FontSize="15" FontWeight="UltraBold" Grid.ColumnSpan="2" Margin="110,62,0,0" Grid.RowSpan="2" />
+        <TextBox x:Name="txtMake"  Grid.Row="1" Grid.Column="2"  Width="110" Margin="8,10,7,10" FontSize="10" FontWeight="Bold" />
+
+        <TextBlock Text="Model:" FontSize="15" FontWeight="UltraBold" Grid.Row="1" Grid.ColumnSpan="2" Margin="110,62,0,62" Grid.RowSpan="3"/>
+        <TextBox x:Name="txtModel" Grid.Row="2" Grid.Column="2"  HorizontalAlignment="Left"  Width="110" Margin="8,10,7,10" FontSize="10" FontWeight="Bold" />
+
+        <TextBlock Text="Year:" FontSize="15" FontWeight="UltraBold" Grid.Row="3" Grid.ColumnSpan="2" Margin="110,0,0,62" Grid.RowSpan="2"/>
+        <TextBox x:Name="txtYear" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Left"  Width="110" Margin="8,10,7,10" FontSize="10" FontWeight="Bold" />
+
+        <TextBlock Text="Engine Size:" FontSize="15" FontWeight="UltraBold" Grid.Row="4" Grid.ColumnSpan="2" Margin="110,0,0,62" Grid.RowSpan="2"/>
+        <TextBox x:Name="txtEngineSize" Grid.Row="4" Grid.Column="2"  HorizontalAlignment="Left"  Width="110" Margin="8,10,7,10" FontSize="10" FontWeight="Bold" />
+
+        <TextBlock Text="Fuel Type:" FontSize="15" FontWeight="UltraBold" Grid.Row="5" Grid.ColumnSpan="2" Margin="110,0,0,0"/>
+        <TextBox x:Name="txtFuelType" Grid.Row="5" Grid.Column="2"  HorizontalAlignment="Left"  Width="110" Margin="8,10,7,10" FontSize="10" FontWeight="Bold"/>
+        <TextBlock Text="Payload Capacity:" FontSize="15" FontWeight="UltraBold" Grid.Row="6" Grid.ColumnSpan="2" Margin="110,4,15,13"  />
+
+        <TextBox x:Name="txtPayloadCapacity" Grid.Row="6" Grid.Column="2" Margin="0,10,0,10" FontSize="10" FontWeight="Bold" HorizontalAlignment="Center" Width="107" />
+
+        <TextBlock Text="Towing Capacity:" Grid.Row="7" FontSize="15"  FontWeight="UltraBold" Grid.ColumnSpan="2" Margin="105,7,0,20" />
+
+        <TextBox x:Name="txtTowingCapacity" Grid.Row="7" Grid.Column="2" Margin="0,10,0,10" FontSize="10" FontWeight="Bold"  HorizontalAlignment="Center" Width="107" />
+
+        <TextBlock Text="Truck Bed Length:" FontSize="15" FontWeight="UltraBold" Grid.Row="8" Grid.ColumnSpan="3" Margin="100,0,124,66" Grid.RowSpan="2"/>
+        <TextBox x:Name="txtTruckBedLength" Grid.Row="8" Grid.Column="2" Margin="10,10,0,10" FontSize="10" FontWeight="Bold"  HorizontalAlignment="Left" Width="97" />
+
+        <!--<Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1" Margin="10">
+
+            <StackPanel>
+                <TextBlock Text="Make:"/>
+                <TextBox x:Name="txtMake" Grid.Row="0" HorizontalAlignment="Left" Width="135" />
+
+                <TextBlock Text="Model:"/>
+                <TextBox x:Name="txtModel"  HorizontalAlignment="Left" Width="135" />
+
+                <TextBlock Text="Year:"/>
+                <TextBox x:Name="txtYear"  HorizontalAlignment="Left" Width="135" />
+
+                <TextBlock Text="Engine Size:"/>
+                <TextBox x:Name="txtEngineSize"  HorizontalAlignment="Left" Width="135" />
+
+                <TextBlock Text="Fuel Type:"/>
+                <TextBox x:Name="txtFuelType"   HorizontalAlignment="Left" Width="135"/>
+                
+                    <TextBlock Text="Payload Capacity:"/>
+                    <TextBox x:Name="txtPayloadCapacity"  HorizontalAlignment="Left" Width="135" />
+
+                    <TextBlock Text="Towing Capacity:"/>
+                    <TextBox x:Name="txtTowingCapacity"  HorizontalAlignment="Left" Width="135" />
+
+                    <TextBlock Text="Truck Bed Length:"/>
+                    <TextBox x:Name="txtTruckBedLength"  HorizontalAlignment="Left" Width="135" />
+
+                </StackPanel>-->
+        <Button  x:Name="btnsave" Grid.Column="1" FontSize="20" FontWeight="ExtraBlack" Grid.Row="9" Content="Save" Click="btnsave_Click" Margin="60,13,70,18" Grid.ColumnSpan="2"/>
+        
+
+
+    </Grid>
+</Window>
